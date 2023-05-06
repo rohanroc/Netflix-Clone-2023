@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(12, 12, 31);
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    color: var(--primary-color);
+}
+
+:root {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: #e50914;
+}
+
+.top-content {
+    /* position: relative; */
+    background: url(Images/background2.jpg) no-repeat center center/cover;
+    height: 100vh;
+    /* filter: brightness(20%); */
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar div {
+    margin-top: 20px;
+}
+
+.navbar div img {
+    width: 170px;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.btn {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition-duration: 0.5s;
+}
+
+.mid-content {
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.mid-content h1 {
+    font-size: 4rem;
+    width: 65%;
+}
+
+.mid-content h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.mid-content p {
+    font-size: 1.25rem;
+    margin: 30px 0;
+}
+
+.email-box {
+    margin-top: 10px;
+}
+
+.email-box input {
+    width: 25%;
+    font-size: larger;
+    padding: 14px 4px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+
+.btn2 {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 14px 15px;
+    font-weight: 700;
+    font-size: x-large;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition-duration: 0.5s;
+}
+
+.btn2:hover,
+.btn:hover {
+    background-color: #b5050e;
+}
+
+.main-section {
+    bottom: 10px;
+}
+
+.main-content-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.content-box {
+    width: 45%;
+    background: linear-gradient(to bottom right, rgba(19, 33, 68, 1), rgba(19, 33, 68, 1), rgb(26, 40, 75), #41080a, #4c0306);
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    padding: 50px 20px;
+}
+
+.content-box div {
+    text-align: center;
+}
+
+.content-box h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 100px;
+}
+
+.content-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 100px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.content-box div img {
+    width: 70%;
+}
+
+i {
+    font-size: 20px;
+}
+
+.faq-section {
+    margin: 70px 0;
+}
+
+.faq-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 140px;
+    margin-bottom: 10px;
+}
+
+.faq-box-content {
+    width: 80%;
+    background-color: rgba(19, 33, 68, 1);
+    padding: 30px 20px;
+    margin: 0px auto;
+    font-size: x-large;
+    display: none;
+}
+
+.faq-box {
+    display: flex;
+    width: 80%;
+    background-color: rgba(19, 33, 68, 1);
+    padding: 20px 15px;
+    margin: 5px auto;
+    font-size: x-large;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-box:hover {
+    background-color: rgb(33, 46, 81);
+}
+
+.faq-box i {
+    font-size: 50px;
+}
+
+/* .faq-box i:hover {
+    transform: rotate(45deg);
+} */
+
+.faq-email-box {
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.email-box p {
+    font-size: 1.25rem;
+    margin: 15px 0;
+}
+
+/* responsive design start here  */
+
+@media only screen and (max-width: 1280px) and (min-width: 960px) {
+    .navbar div img {
+        width: 150px;
+    }
+
+    .mid-content {
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+
+    .mid-content h1 {
+        font-size: 3.25rem;
+        width: 65%;
+    }
+
+    .mid-content h4 {
+        font-size: 1.25rem;
+        margin: 30px 0;
+    }
+
+    .mid-content p {
+        font-size: 1.25rem;
+        margin: 20px 0;
+    }
+
+    .email-box {
+        margin-top: 10px;
+    }
+
+    .email-box input {
+        width: 40%;
+        font-size: larger;
+        padding: 14px 4px;
+        background-color: transparent;
+        color: var(--primary-color);
+        border: 2px solid gray;
+        border-radius: 4px;
+    }
+
+    .content-box h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-left: 50px;
+    }
+
+    .content-box p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 50px;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .faq-section h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-left: 90px;
+        margin-bottom: 10px;
+    }
+
+    .faq-email-box {
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:960px) and (min-width:600px) {
+    .navbar div img {
+        width: 85px;
+        margin-left: 40px;
+    }
+
+    .btn {
+        margin-right: 40px;
+    }
+
+    .mid-content {
+        margin-top: 85px;
+        margin-left: 60px;
+    }
+
+    .mid-content h1 {
+        font-size: 2.5rem;
+        width: 65%;
+    }
+
+    .mid-content h4 {
+        font-size: 1.125rem;
+        margin: 30px 0;
+    }
+
+    .mid-content p {
+        font-size: 1.125rem;
+        margin: 20px 0;
+    }
+
+    .email-box {
+        margin: 20px 0;
+    }
+
+    .email-box input {
+        width: 50%;
+    }
+
+    .content-box {
+        width: 45%;
+        padding: 40px 10px;
+    }
+
+    .content-box h3 {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .content-box p {
+        margin-left: 50px;
+    }
+
+    .content-box div img {
+        width: 75%;
+    }
+
+    .faq-section h1 {
+        font-size: 2rem;
+        margin-left: 120px;
+    }
+
+    .faq-box {
+        width: 65%;
+        padding: 10px 15px;
+    }
+
+    .faq-box-content {
+        width: 65%;
+        background-color: rgba(19, 33, 68, 1);
+        padding: 25px 20px;
+        margin: 0px auto;
+        font-size: x-large;
+        display: none;
+    }
+
+    .faq-email-box {
+        margin-left: 120px;
+    }
+
+    .email-box p {
+        font-size: 1.125rem;
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:600px) and (min-width:300px) {
+    .navbar div img {
+        width: 95px;
+        margin-left: 20px;
+    }
+
+    .btn {
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .mid-content {
+        margin-top: 85px;
+        margin-left: 30px;
+    }
+
+    .mid-content h1 {
+        font-size: 2.5rem;
+        width: 95%;
+    }
+
+    .mid-content h4 {
+        font-size: 1.125rem;
+        margin: 10px 0;
+    }
+
+    .mid-content p {
+        font-size: 1.125rem;
+        margin: 20px 0;
+    }
+
+    .email-box {
+        margin: 20px 0;
+    }
+
+    .email-box input {
+        width: 90%;
+        padding: 10px 4px;
+    }
+
+
+    .btn2 {
+        display: block;
+        padding: 12px 10px;
+        font-size: large;
+        margin: 15px 0;
+    }
+
+    .main-content-boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-box {
+        width: 85%;
+        margin: 10px auto;
+        padding: 30px 20px;
+    }
+
+
+    .content-box h3 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .content-box p {
+        margin-left: 10px;
+        width: fit-content;
+    }
+
+    .content-box div img {
+        width: 95%;
+    }
+
+    .faq-section h1 {
+        font-size: 1.5rem;
+        margin-left: 60px;
+    }
+
+    .faq-box {
+        width: 65%;
+        padding: 8px 15px;
+    }
+
+    .faq-box-content {
+        width: 65%;
+        background-color: rgba(19, 33, 68, 1);
+        padding: 10px 20px;
+        margin: 0px auto;
+        font-size: large;
+        display: none;
+    }
+
+    .faq-box p {
+        font-size: large;
+    }
+
+    .faq-box i {
+        font-size: large;
+    }
+
+    .faq-email-box {
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .email-box p {
+        font-size: 1rem;
+    }
+}
