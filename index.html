@@ -6,34 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body>
-    <header class="top-content">
-        <div class="navbar">
-            <div>
+    <header class="top-content px-8 pt-2">
+        <div class="navbar flex justify-between">
+            <div class="w-36">
                 <img src="Images/logo.png" alt="NETFLIX">
             </div>
-            <div>
-                <button class="btn">Sign In</button>
+            <div class="flex justify-end space-x-3">
+                <button
+                    class="hidden md:block bg-transparent border-2 w-28 text-md border-slate-600 rounded-md">English</button>
+                <button class="btn bg-[#E50915] hover:bg-red-700 w-20 rounded-md h-10 font-bold">Sign In</button>
             </div>
         </div>
         <div class="mid-content">
-            <h1>Unlimited movies, TV shows and more</h1>
-            <h4>Watch anywhere. Cancel anytime.</h4>
+            <div class="leading-loose">
+                <h1 class="font-black text-6xl mb-4">Unlimited movies,TV</h1>
+                <h1 class="font-black text-6xl">shows and more</h1>
+            </div>
+            <h4 class="my-4">Watch anywhere. Cancel anytime.</h4>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="email-box">
-                <input type="email" placeholder="Email address" required>
-                <button class="btn2">Get Started <i class='bx bxs-chevron-right bx-tada'></i></button>
+                <input class="w-96" type="email" placeholder="Email address" required>
+                <button class="btn2 w-48 md:w-52">Get Started <i class='bx bxs-chevron-right bx-tada'></i></button>
             </div>
         </div>
     </header>
 
     <section class="main-section">
-        <div class="main-content-boxes">
-            <div class="content-box">
+        <div class="main-content-boxes flex justify-evenly md:-space-x-10">
+            <div class="content-box ">
                 <div>
                     <img src="Images/content-1.png" alt="">
                 </div>
@@ -50,8 +57,8 @@
             </div>
         </div>
 
-        <div class="main-content-boxes">
-            <div class="content-box">
+        <div class="main-content-boxes flex justify-evenly md:-space-x-10">
+            <div class="content-box ">
                 <div>
                     <img src="Images/content-3.png" alt="">
                 </div>
@@ -137,11 +144,14 @@
         <div class="faq-email-box">
             <div class="email-box">
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <input type="email" placeholder="Email address" required>
+                <input class="w-96" type="email" placeholder="Email address" required>
                 <button class="btn2">Get Started <i class='bx bxs-chevron-right bx-tada'></i></button>
             </div>
         </div>
     </section>
+    <div class="hidden md:block px-32 text-[#AFB2B8] -mb-20">Questions? <span class="underline">Call 000-800-919-1694</span></div>
+    <div class="block md:hidden px-11 text-[#AFB2B8] text-sm">Questions? <span class="underline">Call 000-800-919-1694</span></div>
+
 
     <footer class="footer-container">
         <div class="footer-box">
@@ -170,8 +180,9 @@
             </div>
         </div>
     </footer>
-    <p class="link-p">Made With ❤️ By <a href="https://www.instagram.com/___iamrohan___/" class="link"
-            target="_blank">@Arijit</a></p>
+    <p class="link-p text-sm">Made With ❤️ By <a href="https://www.instagram.com/___iamrohan___/" class="link"
+            target="_blank">@Arijit</a> & <a class="link" href="https://www.pratyushsingha.tech/"
+            target="_blank">@pratyushsingha</a></p>
     <script src="script.js"></script>
 </body>
 
