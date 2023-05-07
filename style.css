@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,7 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: rgb(12, 12, 31);
+    background-color: #01081D;
     list-style: none;
     font-family: 'Arial', sans-serif;
     color: var(--primary-color);
@@ -26,6 +32,7 @@ body {
     height: 100vh;
     /* filter: brightness(20%); */
     position: relative;
+    /* background-color: black; */
 }
 
 .navbar {
@@ -62,19 +69,20 @@ body {
     margin-left: 150px;
 }
 
-.mid-content h1 {
+/* .mid-content h1 {
     font-size: 4rem;
     width: 65%;
-}
+    font-weight: 900;
+} */
 
 .mid-content h4 {
     font-size: 1.5rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .mid-content p {
     font-size: 1.25rem;
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .email-box {
@@ -82,7 +90,7 @@ body {
 }
 
 .email-box input {
-    width: 25%;
+    /* width: 25%; */
     font-size: larger;
     padding: 14px 4px;
     background-color: transparent;
@@ -114,11 +122,12 @@ body {
     bottom: 10px;
 }
 
-.main-content-boxes {
+/* .main-content-boxes {
     display: flex;
-    justify-content: space-around;
-    margin: 0 20px;
-}
+    justify-content: space-between;
+    margin: 0 50px;
+
+} */
 
 .content-box {
     width: 45%;
@@ -229,6 +238,7 @@ i {
     width: 70%;
     margin-left: 65px;
 }
+
 
 .boxs {
     display: flex;
@@ -519,8 +529,8 @@ i {
     }
 
     .boxs span {
-        margin: 20px 0;
-        font-size: 16px;
+        /* margin: 20px 0; */
+        font-size: 14px;
     }
 
     .footer-container {
